@@ -5,6 +5,7 @@ VALUES (800699, 'ace800699-keydominion', 1, '2021-11-01 00:00:00') /* Generic */
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (800699,   1,        128) /* ItemType - Misc */
+     , (800699,   3,          2) /* PaletteTemplate - Blue */
      , (800699,   5,         25) /* EncumbranceVal */
      , (800699,   8,          5) /* Mass */
      , (800699,  16,          1) /* ItemUseable - No */
@@ -25,7 +26,9 @@ VALUES (800699,   1, 'Dominion Key') /* Name */
      , (800699,  16, 'A platinum key found in the catacombs beneath Ithaenc. It may once have been inscribed, but it has been heavily corroded by some kind of acid.') /* LongDesc */;
 
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
-VALUES (800699,   1, 0x02000160) /* Setup */
+VALUES (800699,   1, 0x02000A08) /* Setup */
      , (800699,   3, 0x20000014) /* SoundTable */
-     , (800699,   8, 0x06001419) /* Icon */
+     , (800699,   6, 0x040009B2) /* PaletteBase */
+     , (800699,   7, 0x100002B6) /* ClothingBase */
+     , (800699,   8, 0x06001FE1) /* Icon */
      , (800699,  22, 0x3400002B) /* PhysicsEffectTable */;

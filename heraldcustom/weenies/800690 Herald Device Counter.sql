@@ -46,7 +46,7 @@ VALUES (800690,   1,       5) /* HeartbeatInterval */
      , (800690,  17,     0.4) /* ArmorModVsFire */
      , (800690,  18,       1) /* ArmorModVsAcid */
      , (800690,  19,     0.6) /* ArmorModVsElectric */
-     , (800690,  41,      30) /* RegenerationInterval */
+     , (800690,  41,       0) /* RegenerationInterval */
      , (800690,  43,       5) /* GeneratorRadius */
      , (800690,  54,       3) /* UseRadius */
      , (800690,  64,       1) /* ResistSlash */
