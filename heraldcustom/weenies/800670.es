@@ -39,6 +39,7 @@ GotoSet: CheckCount4
 
 Death:
     - StartEvent: heraldshattered
+    - LocalSignal: deleteportal
     - LocalBroadcast: On Savao Island, %s's party make the grievous error of shattering the last Soul Crystal! The patterns of magic are rent asunder.
     - LocalBroadcast: The currents coursing through the ley lines flare and sputter in dismay. A tremor passes through the ground, as if the world itself were recoiling in horror. For a moment, all is still. The wind holds its breath. Then, on the back of a rising gale, there comes the faint sound of black laughter.
     - LocalBroadcast: The Herald is come.
