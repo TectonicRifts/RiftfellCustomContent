@@ -19,10 +19,10 @@ VALUES (800698,   1, True ) /* Stuck */
 INSERT INTO `weenie_properties_float` (`object_Id`, `type`, `value`)
 VALUES (800698,  41,      60) /* RegenerationInterval */
      , (800698,  43,       1) /* GeneratorRadius */
-     , (800698, 121,      30) /* GeneratorInitialDelay */;
+     , (800698, 121,      20) /* GeneratorInitialDelay */;
 
 INSERT INTO `weenie_properties_string` (`object_Id`, `type`, `value`)
-VALUES (800698,   1, 'Linkable Herald Shattered Gen ( 5 Min.)') /* Name */
+VALUES (800698,   1, 'Linkable Herald Shattered Gen') /* Name */
      , (800698,  34, 'heraldshattered') /* GeneratorEvent */;
 
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)

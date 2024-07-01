@@ -15,7 +15,7 @@ VALUES (800676,   1,         16) /* ItemType - Creature */
      , (800676,  27,          0) /* ArmorType - None */
      , (800676,  68,          3) /* TargetingTactic - Random, Focused */
      , (800676,  81,          2) /* MaxGeneratedObjects */
-     , (800676,  82,          0) /* InitGeneratedObjects */
+     , (800676,  82,          2) /* InitGeneratedObjects */
      , (800676,  93,    4195336) /* PhysicsState - ReportCollisions, Gravity, EdgeSlide */
      , (800676,  95,          5) /* RadarBlipColor - Red */
      , (800676, 101,        183) /* AiAllowedCombatStyle - Unarmed, OneHanded, OneHandedAndShield, Bow, Crossbow, ThrownWeapon */
@@ -24,7 +24,7 @@ VALUES (800676,   1,         16) /* ItemType - Creature */
      , (800676, 140,          1) /* AiOptions - CanOpenDoors */
      , (800676, 146,    2500000) /* XpOverride */
      , (800676, 281,         32) /* Faction1Bits - 32 */
-     , (800676, 307,         15) /* DamageRating */
+     , (800676, 307,         20) /* DamageRating */
      , (800676, 386,         20) /* Overpower */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
@@ -53,7 +53,7 @@ VALUES (800676,   1,       5) /* HeartbeatInterval */
      , (800676,  34,     1.1) /* PowerupTime */
      , (800676,  36,       1) /* ChargeSpeed */
      , (800676,  39,       1) /* DefaultScale */
-     , (800676,  41,       0) /* RegenerationInterval */
+     , (800676,  41,     120) /* RegenerationInterval */
      , (800676,  43,       8) /* GeneratorRadius */
      , (800676,  64,       1) /* ResistSlash */
      , (800676,  65,     0.5) /* ResistPierce */
@@ -97,9 +97,9 @@ VALUES (800676,   1, 410, 0, 0) /* Strength */
      , (800676,   6, 260, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (800676,   1, 37021, 0, 0, 37138) /* MaxHealth */
-     , (800676,   3,  4100, 0, 0, 4335) /* MaxStamina */
-     , (800676,   5,  2100, 0, 0, 2360) /* MaxMana */;
+VALUES (800676,   1, 87020, 0, 0, 87138) /* MaxHealth */
+     , (800676,   3,  8100, 0, 0, 8335) /* MaxStamina */
+     , (800676,   5,  4100, 0, 0, 4360) /* MaxMana */;
 
 INSERT INTO `weenie_properties_skill` (`object_Id`, `type`, `level_From_P_P`, `s_a_c`, `p_p`, `init_Level`, `resistance_At_Last_Check`, `last_Used_Time`)
 VALUES (800676,  6, 0, 3, 0, 540, 0, 0) /* MeleeDefense        Specialized */
@@ -135,14 +135,6 @@ VALUES (800676,  5338,   2.02)  /* Incantation of Destructive Curse */
      , (800676,  5355,   2.05)  /* Nether Bolt VII */
      , (800676,  5367,   2.05)  /* Nether Arc VII */;
 
-INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
-VALUES (800676, 15 /* WoundedTaunt */,      1, NULL, NULL, NULL, NULL, NULL, 0.48, 0.52);
-
-SET @parent_id = LAST_INSERT_ID();
-
-INSERT INTO `weenie_properties_emote_action` (`emote_Id`, `order`, `type`, `delay`, `extent`, `motion`, `message`, `test_String`, `min`, `max`, `min_64`, `max_64`, `min_Dbl`, `max_Dbl`, `stat`, `display`, `amount`, `amount_64`, `hero_X_P_64`, `percent`, `spell_Id`, `wealth_Rating`, `treasure_Class`, `treasure_Type`, `p_Script`, `sound`, `destination_Type`, `weenie_Class_Id`, `stack_Size`, `palette`, `shade`, `try_To_Bond`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`)
-VALUES (@parent_id,  0,  72 /* Generate */, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-
 INSERT INTO `weenie_properties_create_list` (`object_Id`, `destination_Type`, `weenie_Class_Id`, `stack_Size`, `palette`, `shade`, `try_To_Bond`)
 VALUES (800676, 2, 800669,  1, 0, 0, False) /* Create Vengeance of Daralet (800669) for Wield */
      , (800676, 2, 23685,  1, 0, 0, False) /* Create Kite Shield (23685) for Wield */
@@ -150,5 +142,5 @@ VALUES (800676, 2, 800669,  1, 0, 0, False) /* Create Vengeance of Daralet (8006
      , (800676, 9,     0,  0, 0, 0.98, False) /* Create nothing for ContainTreasure */;
 
 INSERT INTO `weenie_properties_generator` (`object_Id`, `probability`, `weenie_Class_Id`, `delay`, `init_Create`, `max_Create`, `when_Create`, `where_Create`, `stack_Size`, `palette_Id`, `shade`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`)
-VALUES (800676, -1, 800693, 300, 1, 1, 1, 2, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate Savao Island Gen (800693) (x1 up to max of 1) - Regenerate upon Destruction - Location to (re)Generate: Scatter */
-     , (800676, -1, 800693, 300, 1, 1, 1, 2, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate Savao Island Gen (800693) (x1 up to max of 1) - Regenerate upon Destruction - Location to (re)Generate: Scatter */;
+VALUES (800676, -1, 800693, 60, 1, 1, 1, 2, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate Savao Island Gen (800693) (x1 up to max of 1) - Regenerate upon Destruction - Location to (re)Generate: Scatter */
+     , (800676, -1, 800693, 60, 1, 1, 1, 2, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate Savao Island Gen (800693) (x1 up to max of 1) - Regenerate upon Destruction - Location to (re)Generate: Scatter */;

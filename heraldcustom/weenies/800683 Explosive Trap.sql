@@ -66,7 +66,7 @@ VALUES (800683,   1,       5) /* HeartbeatInterval */
 
 INSERT INTO `weenie_properties_string` (`object_Id`, `type`, `value`)
 VALUES (800683,   1, 'Explosive Trap') /* Name */
-     , (800683,  16, 'A small spire of black crystal, which hums with power.') /* LongDesc */;
+     , (800683,  16, 'A small vortex of energy that hums with power.') /* LongDesc */;
 
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
 VALUES (800683,   1, 0x020015CE) /* Setup */

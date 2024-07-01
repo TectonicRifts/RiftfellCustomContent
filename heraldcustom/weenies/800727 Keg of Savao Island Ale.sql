@@ -5,9 +5,9 @@ VALUES (800727, 'ace800727-kegofsavaoislandale', 1, '2021-11-01 00:00:00') /* Ge
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (800727,   1,        128) /* ItemType - Misc */
-     , (800727,   5,        800) /* EncumbranceVal */
+     , (800727,   5,       5000) /* EncumbranceVal */
      , (800727,  16,          1) /* ItemUseable - No */
-     , (800727,  18,          4) /* UiEffects - Lightning */
+     , (800727,  18,          4) /* UiEffects - BoostHealth */
      , (800727,  19,          0) /* Value */
      , (800727,  93,       1044) /* PhysicsState - Ethereal, IgnoreCollisions, Gravity */
      , (800727, 267,        300) /* Lifespan */;
@@ -31,4 +31,3 @@ VALUES (800727,   1, 0x0200188D) /* Setup */
      , (800727,   4, 0x30000004) /* CombatTable */
      , (800727,   8, 0x06001027) /* Icon */
      , (800727,  22, 0x3400006B) /* PhysicsEffectTable */;
-

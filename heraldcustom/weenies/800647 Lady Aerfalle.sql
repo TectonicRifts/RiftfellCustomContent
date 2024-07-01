@@ -1,7 +1,7 @@
 DELETE FROM `weenie` WHERE `class_Id` = 800647;
 
 INSERT INTO `weenie` (`class_Id`, `class_Name`, `type`, `last_Modified`)
-VALUES (800647, 'ace800647-aerfallegeneral', 10, '2024-06-06 09:49:03') /* Creature */;
+VALUES (800647, 'ace800647-aerfallegeneral', 10, '2024-07-01 02:05:09') /* Creature */;
 
 INSERT INTO `weenie_properties_int` (`object_Id`, `type`, `value`)
 VALUES (800647,   1,         16) /* ItemType - Creature */
@@ -22,7 +22,8 @@ VALUES (800647,   1,         16) /* ItemType - Creature */
      , (800647, 133,          2) /* ShowableOnRadar - ShowMovement */
      , (800647, 140,          1) /* AiOptions - CanOpenDoors */
      , (800647, 146,    4000000) /* XpOverride */
-     , (800647, 307,         15) /* DamageRating */;
+     , (800647, 307,         35) /* DamageRating */
+     , (800647, 308,         20) /* DamageResistRating */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
 VALUES (800647,   1, True ) /* Stuck */
@@ -90,7 +91,7 @@ VALUES (800647,   1, 330, 0, 0) /* Strength */
      , (800647,   6, 375, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (800647,   1, 35100, 0, 0, 35285) /* MaxHealth */
+VALUES (800647,   1, 95100, 0, 0, 95285) /* MaxHealth */
      , (800647,   3,  5050, 0, 0, 5420) /* MaxStamina */
      , (800647,   5,  8200, 0, 0, 8575) /* MaxMana */;
 
@@ -116,39 +117,25 @@ VALUES (800647,  0,  4,  0,    0,  410,  205,  205,  205,  205,  205,  205,  205
      , (800647,  8,  4, 600, 0.75,  420,  210,  210,  210,  210,  210,  210,  210,    0, 3,    0,    0, 0.22,    0,    0, 0.22,    0,    0, 0.22,    0,    0, 0.22) /* Foot */;
 
 INSERT INTO `weenie_properties_spell_book` (`object_Id`, `spell`, `probability`)
-VALUES (800647,  2088,  2.013)  /* Senescence */
-     , (800647,  2330,   2.03)  /* Vigor Siphon */
-     , (800647,  2138,  2.028)  /* Blizzard */
-     , (800647,  2136,  2.028)  /* Icy Torment */
-     , (800647,  2123,  2.028)  /* Celdiseth's Searing */
-     , (800647,  4449,   2.01)  /* Incantation of Frost Volley */
-     , (800647,  4447,   2.01)  /* Incantation of Frost Bolt */
-     , (800647,  4434,   2.01)  /* Incantation of Acid Volley */
-     , (800647,  2144,  2.028)  /* Crushing Shame */
-     , (800647,  4455,   2.01)  /* Incantation of Shock Wave */
-     , (800647,  6198,   2.01)  /* Incantation of Lightning Bolt */
-     , (800647,  2084,  2.013)  /* Belly of Lead */
-     , (800647,  2142,  2.028)  /* Tempest */
-     , (800647,  4453,   2.01)  /* Incantation of Lightning Volley */
-     , (800647,  2140,  2.028)  /* Alset's Coil */
-     , (800647,  2130,  2.028)  /* Infernae */
-     , (800647,  4441,   2.01)  /* Incantation of Flame Volley */
-     , (800647,  2128,  2.028)  /* Ilservian's Flame */
-     , (800647,  4439,   2.01)  /* Incantation of Flame Bolt */
-     , (800647,  2328,   2.03)  /* Vitality Siphon */
-     , (800647,  2132,  2.028)  /* The Spike */
-     , (800647,  2146,  2.028)  /* Evisceration */
-     , (800647,  2068,  2.013)  /* Brittle Bones */
-     , (800647,  4443,   2.01)  /* Incantation of Force Bolt */
-     , (800647,  4457,   2.01)  /* Incantation of Whirling Blade */
-     , (800647,  2054,  2.013)  /* Synaptic Misfire */
-     , (800647,  2185,   2.03)  /* Robustify */
-     , (800647,  2178,  2.013)  /* Decrepitude's Grasp */
-     , (800647,  2329,   2.03)  /* Essence Void */
-     , (800647,  2056,  2.013)  /* Ataxia */
-     , (800647,  2064,  2.013)  /* Self Loathing */
-     , (800647,  2122,  2.028)  /* Disintegration */
-     , (800647,  4433,   2.01)  /* Incantation of Acid Stream */;
+VALUES (800647,  2088,   2.01)  /* Senescence */
+     , (800647,  2136,   2.05)  /* Icy Torment */
+     , (800647,  4447,   2.03)  /* Incantation of Frost Bolt */
+     , (800647,  2144,   2.05)  /* Crushing Shame */
+     , (800647,  4455,   2.04)  /* Incantation of Shock Wave */
+     , (800647,  2084,   2.01)  /* Belly of Lead */
+     , (800647,  2128,   2.06)  /* Ilservian's Flame */
+     , (800647,  4439,   2.04)  /* Incantation of Flame Bolt */
+     , (800647,  2328,   2.04)  /* Vitality Siphon */
+     , (800647,  2068,   2.01)  /* Brittle Bones */
+     , (800647,  2054,   2.01)  /* Synaptic Misfire */
+     , (800647,  2056,   2.01)  /* Ataxia */
+     , (800647,  2064,   2.01)  /* Self Loathing */
+     , (800647,  2122,   2.07)  /* Disintegration */
+     , (800647,  4433,   2.05)  /* Incantation of Acid Stream */
+     , (800647,  4473,   2.03)  /* Incantation of Acid Vulnerability Other */
+     , (800647,  4481,   2.03)  /* Incantation of Fire Vulnerability Other */
+     , (800647,  4479,   2.04)  /* Incantation of Cold Vulnerability Other */
+     , (800647,  4477,   2.04)  /* Incantation of Bludgeoning Vulnerability Other */;
 
 INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
 VALUES (800647,  3 /* Death */,      1, NULL, NULL, NULL, NULL, NULL, NULL, NULL);

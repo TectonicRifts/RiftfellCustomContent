@@ -19,7 +19,7 @@ VALUES (800679,   1,         16) /* ItemType - Creature */
      , (800679, 133,          2) /* ShowableOnRadar - ShowMovement */
      , (800679, 140,          1) /* AiOptions - CanOpenDoors */
      , (800679, 146,    1850000) /* XpOverride */
-     , (800679, 307,         10) /* DamageRating */;
+     , (800679, 307,         20) /* DamageRating */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
 VALUES (800679,   1, True ) /* Stuck */
@@ -90,7 +90,7 @@ VALUES (800679,   1, 400, 0, 0) /* Strength */
      , (800679,   6, 370, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (800679,   1, 18145, 0, 0, 18255) /* MaxHealth */
+VALUES (800679,   1, 50145, 0, 0, 50255) /* MaxHealth */
      , (800679,   3,  4150, 0, 0, 4370) /* MaxStamina */
      , (800679,   5,  1960, 0, 0, 2330) /* MaxMana */;
 

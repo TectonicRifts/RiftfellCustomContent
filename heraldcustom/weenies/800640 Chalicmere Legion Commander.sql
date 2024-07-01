@@ -19,7 +19,7 @@ VALUES (800640,   1,         16) /* ItemType - Creature */
      , (800640, 133,          2) /* ShowableOnRadar - ShowMovement */
      , (800640, 140,          1) /* AiOptions - CanOpenDoors */
      , (800640, 146,    2300000) /* XpOverride */
-     , (800640, 307,         15) /* DamageRating */
+     , (800640, 307,         25) /* DamageRating */
      , (800640, 386,         20) /* Overpower */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
@@ -85,7 +85,7 @@ VALUES (800640,   1, 375, 0, 0) /* Strength */
      , (800640,   6, 375, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (800640,   1, 25148, 0, 0, 25330) /* MaxHealth */
+VALUES (800640,   1, 75148, 0, 0, 75330) /* MaxHealth */
      , (800640,   3,  5065, 0, 0, 5429) /* MaxStamina */
      , (800640,   5,  2010, 0, 0, 2385) /* MaxMana */;
 

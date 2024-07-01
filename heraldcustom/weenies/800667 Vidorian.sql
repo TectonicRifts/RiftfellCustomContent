@@ -22,7 +22,7 @@ VALUES (800667,   1,         16) /* ItemType - Creature */
      , (800667, 146,    4000000) /* XpOverride */
      , (800667, 188,          1) /* HeritageGroup - Aluvian */
      , (800667, 281,         32) /* Faction1Bits - 32 */
-     , (800667, 307,         15) /* DamageRating */
+     , (800667, 307,         20) /* DamageRating */
      , (800667, 386,         20) /* Overpower */;
 
 INSERT INTO `weenie_properties_bool` (`object_Id`, `type`, `value`)
@@ -85,9 +85,9 @@ VALUES (800667,   1, 250, 0, 0) /* Strength */
      , (800667,   6, 350, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (800667,   1, 34870, 0, 0, 35000) /* MaxHealth */
-     , (800667,   3,  4740, 0, 0, 5000) /* MaxStamina */
-     , (800667,   5,   650, 0, 0, 1000) /* MaxMana */;
+VALUES (800667,   1, 104870, 0, 0, 105000) /* MaxHealth */
+     , (800667,   3,  7740, 0, 0, 8000) /* MaxStamina */
+     , (800667,   5,  3650, 0, 0, 4000) /* MaxMana */;
 
 INSERT INTO `weenie_properties_skill` (`object_Id`, `type`, `level_From_P_P`, `s_a_c`, `p_p`, `init_Level`, `resistance_At_Last_Check`, `last_Used_Time`)
 VALUES (800667,  6, 0, 2, 0, 420, 0, 0) /* MeleeDefense        Trained */
@@ -109,7 +109,7 @@ VALUES (800667,  0,  4,  0,    0,  450,  225,  225,  225,  225,  225,  225,  225
      , (800667,  8,  4,  8, 0.75,  450,  225,  225,  225,  225,  225,  225,  225,    0, 3,    0,    0, 0.22,    0,    0, 0.22,    0,    0, 0.22,    0,    0, 0.22) /* Foot */;
 
 INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
-VALUES (800667, 15 /* WoundedTaunt */,      1, NULL, NULL, NULL, NULL, NULL, 0.48, 0.52);
+VALUES (800667, 15 /* WoundedTaunt */,      1, NULL, NULL, NULL, NULL, NULL, 0.45, 0.55);
 
 SET @parent_id = LAST_INSERT_ID();
 

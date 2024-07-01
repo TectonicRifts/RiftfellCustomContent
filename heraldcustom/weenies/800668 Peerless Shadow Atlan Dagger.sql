@@ -36,7 +36,7 @@ VALUES (800668,  21,     0.4) /* WeaponLength */
      , (800668,  29,       1) /* WeaponDefense */
      , (800668,  39,       1) /* DefaultScale */
      , (800668,  62,       1) /* WeaponOffense */
-     , (800668, 138,     3.4) /* SlayerDamageBonus */;
+     , (800668, 138,       4) /* SlayerDamageBonus */;
 
 INSERT INTO `weenie_properties_string` (`object_Id`, `type`, `value`)
 VALUES (800668,   1, 'Peerless Shadow Atlan Dagger') /* Name */;

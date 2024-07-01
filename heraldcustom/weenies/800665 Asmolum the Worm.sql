@@ -93,7 +93,7 @@ VALUES (800665,   1, 430, 0, 0) /* Strength */
      , (800665,   6, 375, 0, 0) /* Self */;
 
 INSERT INTO `weenie_properties_attribute_2nd` (`object_Id`, `type`, `init_Level`, `level_From_C_P`, `c_P_Spent`, `current_Level`)
-VALUES (800665,   1, 10150, 0, 0, 10285) /* MaxHealth */
+VALUES (800665,   1, 35150, 0, 0, 35285) /* MaxHealth */
      , (800665,   3,  4150, 0, 0, 4420) /* MaxStamina */
      , (800665,   5,  2200, 0, 0, 2575) /* MaxMana */;
 

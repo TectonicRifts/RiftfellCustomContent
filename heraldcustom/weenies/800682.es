@@ -2,7 +2,7 @@ Use:
     - TurnToTarget
     - InqIntStat: Level, 200 - 999
         TestSuccess:
-            - Tell: An anomaly is occuring in the camp to the southwest, no doubt the result of Virindi activity.
+            - Tell: An anomaly is occuring in the camp to the southeast, no doubt the result of Virindi activity.
             - Tell: The Sand King Anadil of Shakrassekor has returned with a retinue of powerful undead.
             - Tell: There is another all too familiar presence further to the west. 
             - Tell: The Sand King once sought to protect the Shard of the Herald, the final piece of the crystal prison of my old friend, driven mad by vengeance.
@@ -21,6 +21,12 @@ Refuse: 8551
     - Tell: This gem was used to access the hidden catacombs of the Ithaenc Cathedral where the Shard of the Herald was housed.
     - Tell: However, Asheron has since consigned that place to oblivion.
     - Tell: I sense that the gem has been tampered with, and its destination altered to Savao Island.
+
+Refuse: 8506
+    - Tell: This is a journal kept by the Sand King, detailing his campaign on the Vesayen Islands.
+    - Tell: It mentions a key that was broken in three.
+    - Tell: The camp at the marshy pond the journal refers to is located at 83.2S 91.0E to the west.
+    - Tell: You will likely find a piece of the key there.
 
 Give: 7916
     - TurnToTarget
