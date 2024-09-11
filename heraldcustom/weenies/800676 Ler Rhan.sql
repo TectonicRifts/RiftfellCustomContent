@@ -53,7 +53,7 @@ VALUES (800676,   1,       5) /* HeartbeatInterval */
      , (800676,  34,     1.1) /* PowerupTime */
      , (800676,  36,       1) /* ChargeSpeed */
      , (800676,  39,       1) /* DefaultScale */
-     , (800676,  41,     120) /* RegenerationInterval */
+     , (800676,  41,     180) /* RegenerationInterval */
      , (800676,  43,       8) /* GeneratorRadius */
      , (800676,  64,       1) /* ResistSlash */
      , (800676,  65,     0.5) /* ResistPierce */
@@ -142,5 +142,5 @@ VALUES (800676, 2, 800669,  1, 0, 0, False) /* Create Vengeance of Daralet (8006
      , (800676, 9,     0,  0, 0, 0.98, False) /* Create nothing for ContainTreasure */;
 
 INSERT INTO `weenie_properties_generator` (`object_Id`, `probability`, `weenie_Class_Id`, `delay`, `init_Create`, `max_Create`, `when_Create`, `where_Create`, `stack_Size`, `palette_Id`, `shade`, `obj_Cell_Id`, `origin_X`, `origin_Y`, `origin_Z`, `angles_W`, `angles_X`, `angles_Y`, `angles_Z`)
-VALUES (800676, -1, 800693, 60, 1, 1, 1, 2, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate Savao Island Gen (800693) (x1 up to max of 1) - Regenerate upon Destruction - Location to (re)Generate: Scatter */
-     , (800676, -1, 800693, 60, 1, 1, 1, 2, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate Savao Island Gen (800693) (x1 up to max of 1) - Regenerate upon Destruction - Location to (re)Generate: Scatter */;
+VALUES (800676, -1, 800693, 120, 1, 1, 1, 2, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate Savao Island Gen (800693) (x1 up to max of 1) - Regenerate upon Destruction - Location to (re)Generate: Scatter */
+     , (800676, -1, 800693, 120, 1, 1, 1, 2, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0) /* Generate Savao Island Gen (800693) (x1 up to max of 1) - Regenerate upon Destruction - Location to (re)Generate: Scatter */;

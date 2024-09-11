@@ -21,7 +21,7 @@ VALUES (800662,  41,       5) /* RegenerationInterval */
 
 INSERT INTO `weenie_properties_string` (`object_Id`, `type`, `value`)
 VALUES (800662,   1, 'Asmolum Gen') /* Name */
-     , (800662,  34, 'heralduberperimeter') /* GeneratorEvent */;
+     , (800662,  34, 'heralduber') /* GeneratorEvent */;
 
 INSERT INTO `weenie_properties_d_i_d` (`object_Id`, `type`, `value`)
 VALUES (800662,   1, 0x0200026B) /* Setup */

@@ -119,12 +119,12 @@ VALUES (800670,  0,  4, 500, 0.75,  200,  100,  100,  100,  100,  100,  100,  10
      , (800670, 17,  4, 500, 0.75,  200,  100,  100,  100,  100,  100,  100,  100,    0, 2,    0,    0,    0,    0,    0,    0,  0.1,  0.1,    0,  0.1,  0.1,    0) /* Tail */;
 
 INSERT INTO `weenie_properties_spell_book` (`object_Id`, `spell`, `probability`)
-VALUES (800670,  4451,  2.083)  /* Incantation of Lightning Bolt */
-     , (800670,  3880,  2.083)  /* Galvanic Strike */
-     , (800670,  4483,  2.083)  /* Incantation of Lightning Vulnerability Other */
-     , (800670,  4308,  2.083)  /* Incantation of Harm Other */
-     , (800670,  4597,  2.083)  /* Incantation of Magic Yield Other */
-     , (800670,  4633,  2.083)  /* Incantation of Vulnerability Other */;
+VALUES (800670,  4451,  2.16)  /* Incantation of Lightning Bolt */
+     , (800670,  3880,  2.19)  /* Galvanic Strike */
+     , (800670,  4483,  2.15)  /* Incantation of Lightning Vulnerability Other */
+     , (800670,  4308,  2.17)  /* Incantation of Harm Other */
+     , (800670,  4597,  2.12)  /* Incantation of Magic Yield Other */
+     , (800670,  4633,  2.14)  /* Incantation of Vulnerability Other */;
 
 INSERT INTO `weenie_properties_emote` (`object_Id`, `category`, `probability`, `weenie_Class_Id`, `style`, `substyle`, `quest`, `vendor_Type`, `min_Health`, `max_Health`)
 VALUES (800670,  3 /* Death */,      1, NULL, NULL, NULL, NULL, NULL, NULL, NULL);

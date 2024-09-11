@@ -13,7 +13,7 @@ VALUES (800684,   1,          1) /* ItemType - MeleeWeapon */
      , (800684,  19,      10190) /* Value */
      , (800684,  33,         -2) /* Bonded - Destroy */
      , (800684,  36,       9999) /* ResistMagic */
-     , (800684,  44,        800) /* Damage */
+     , (800684,  44,        100) /* Damage */
      , (800684,  45,         16) /* DamageType - Fire */
      , (800684,  46,          2) /* DefaultCombatStyle - OneHanded */
      , (800684,  47,          6) /* AttackType - Thrust, Slash */
